@@ -1,0 +1,128 @@
+/* Poster start */
+.poster {
+  margin-top: 6.25rem;
+}
+
+.poster-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.poster-img {
+  width: 60%;
+  margin-left: 7rem;
+}
+
+.poster-content {
+  color: var(--primary-color);
+  padding-top: 10rem;
+  flex: 1;
+}
+
+.poster-title {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 3.4vw;
+}
+
+.poster-title .title-bg {
+  background-color: #fff;
+  padding: 0.75rem 5rem;
+}
+
+.poster-title .poster-subtitle {
+  text-align: right;
+  display: block;
+  padding-right: 5rem;
+}
+
+.poster-texts p {
+  text-align: left;
+}
+.poster-content p {
+  width: 80%;
+  padding-left: 3rem;
+  padding-top: 60px;
+  font-size: clamp(0.875rem, 0.6607rem + 0.3348vw, 1.0625rem);
+  color: var(--text-color);
+}
+
+.poster-content a {
+  margin-top: 2.75rem;
+  text-align: left;
+  justify-content: flex-start;
+  margin-left: 12rem;
+}
+
+@media (max-width: 1300px) {
+  .poster-content p {
+    padding-top: 10px;
+  }
+
+  .poster-content a {
+    margin-left: 30%;
+    margin-top: 0;
+    text-align: center;
+    justify-content: center;
+  }
+  .poster-content {
+    padding-top: 7rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .poster-container {
+    flex-direction: column-reverse;
+  }
+
+  .poster-content {
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .poster-subtitle {
+    width: 100%;
+    display: flex;
+  }
+
+  .poster-content a {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .poster-content p {
+    margin: auto;
+    text-align: center;
+  }
+
+  .poster-title {
+    text-align: center;
+    position: static;
+    font-size: 2rem;
+  }
+
+  .poster-title .poster-subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .poster-img {
+    align-self: center;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .poster-content p {
+    margin: 0 1rem;
+    text-align: center;
+    max-width: none;
+  }
+}
+/* Poster Finish */
